@@ -161,7 +161,7 @@ struct ContentView: View {
             Text(richOrPoor)
                     .font(.title3)
                     .fontWeight(.semibold)
-                    .foregroundColor(Color.red)
+                    .foregroundColor(Color.green)
             }
             
             
@@ -174,12 +174,12 @@ struct ContentView: View {
                 .foregroundColor(Color.white)
                 .padding(15)
                 .background(Color.white.opacity(0.3))
-                .cornerRadius(5)
-                onTapGesture {
+                .cornerRadius(10)
+                .onTapGesture {
                     
                     
                     
-                    total = (1.8 * Double(stepperValue1)) + (2.05 * Double(stepperValue1)) + (1.6 * Double(stepperValue1)) + (1.35 * Double(stepperValue1))
+                    total = (1.8 * Double(stepperValue1)) + (2.05 * Double(stepperValue2)) + (1.6 * Double(stepperValue3)) + (1.35 * Double(stepperValue4))
                     
                     if amountOfMoney.isEmpty {
                         richOrPoor = "Enter your amount please"
